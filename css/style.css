@@ -1,0 +1,72 @@
+.bg-kalkulator-primary-dark{
+    background: #222831;
+}
+.bg-kalkulator-primary-light{
+    background: #ffffff;
+}
+.bg-kalkulator-secondary-dark{
+    background: #393e46;
+}
+.bg-kalkulator-secondary-light{
+    background: #f4f4f4;
+}
+.form-switch-kalkulator:checked ~ .lingkaran{
+    left: 50%;
+    background: #ffffff;
+}
+.form-switch-kalkulator:checked ~ .gambar{
+    right: 50%;
+    background-image: url("../assets/sun.svg");
+}
+.form-label-kalkulator{
+    position: relative;
+    height: 30px;
+    width: 55px;
+    background: #EEEEEE;
+    border-radius: 30px;
+}
+.lingkaran{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #222831;
+    border-radius: 50%;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    transition: .5s all ease-in-out;
+}
+.gambar{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url("../assets/moon.svg");
+    background-size: contain;
+    border-radius: 50%;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    transition: .5s all ease-in-out;
+}
+.form-input-kalkulator{
+    height: 40px;
+    width: 100%;
+    text-align: right;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+.group-button-kalkulator{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.button-kalkulator-dark{
+    background: #222831;
+    aspect-ratio: 1/1;
+}
+.button-kalkulator-light{
+    background: #ffffff;
+    aspect-ratio: 1/1;
+}
